@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.photos {
+	width: 1900px;
+	height: 350px;
+	font-size: 0;
+}
+
+.photos figure {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	height: 350px;
+	vertical-align: middle;
+	border: solid white;
+	border-width: 1px 1px 0 0;	
+	border-left: none;
+}
+
+.photos figure:first-child {
+	background: url("photo1.jpg") rgba(255,0,0, 0.5); /* Добавляем фон */
+
+}
+
+.photos figure:nth-child(2) {
+	background: url("photo2.jpg") -85px 0 / cover rgba(255,0,0, 0.5);;	
+}
+
+.photos figure:nth-child(3) {
+	background: url("photo3.jpg") -85px 0 / cover;	
+}
+
+/*figure:nth-child(4) {
+	background: url("photo4.jpg") -85px 0 / cover;
+	border-right: none;	
+}*/
+
+.photos figcaption {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	
+	font-family: Raleway;
+}
+
+.photos figure:hover h2 {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-top: 100px;
+}
+
+.photos figure:hover figcaption {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+
+}
